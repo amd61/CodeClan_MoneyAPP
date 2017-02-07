@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #292b2c;
+  background-color: #fff;
+  padding: 15px;
+}
+
+#header {
+  height: 90px;
+}
+
+#header #title {
+  text-align: center;
+}
+
+#header #title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#content {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+ /* border: 1px solid #ddd;*/
+  padding: 10px 25px 10px 25px;
+  border-radius: 5px;
+}
+
+#content h1 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  text-align: center;
+}
+
+.table thead th {
+  vertical-align: bottom;
+}
+
+.table tbody + tbody {
+  border-top: 6px solid #c7bbc9;
+}
+
+.table .table {
+  background-color: #fff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(58, 130, 84, 0.32);
+}
+
+a.button {
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #0E2F59;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-decoration: none;
+}

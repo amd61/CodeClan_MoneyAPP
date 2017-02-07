@@ -1,0 +1,23 @@
+<%= erb :'_shared/header' %>
+
+<h1>Tags</h1>
+<p><a href="/transactions">View Transactions</a> </p>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th> 
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for tag in @tags %>
+    <tr>
+      <td><%= tag.name %></td> 
+      <td> &pound;<%= sprintf "%#.2f", tag.total %> </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<a href="/tags/create">Create New Tag</a>
+<%= erb :'_shared/footer' %>

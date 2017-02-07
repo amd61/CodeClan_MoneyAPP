@@ -1,0 +1,40 @@
+<%= erb :'_shared/header' %>
+
+<h1>New Transaction</h1>
+
+<form action="/transactions" method="post">
+  <p>
+  Enter Shop Name:
+  </p>
+  <p>
+    <label>
+      <input type="text" name="shop">
+    </label>
+  </p>
+
+  <p>
+  Enter Amount:
+  </p>
+  <p>
+    <label>
+      <input type="text" name="value">
+    </label>
+  </p>
+
+
+  <p>
+  Select A Tag:
+  </p>
+  <p>
+    <label>
+      <select name="tag_id">
+        <% for tag in @tags %>
+        <option value="<%= tag.id %>"><%= tag.name %></option>
+        <% end %>
+      </select>
+    </label>
+  </p>
+
+  <input class="btn btn--action" type='submit' value="Submit">
+</form>
+<%= erb :'_shared/footer' %>
