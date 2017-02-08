@@ -1,34 +1,58 @@
+
+/*background-color: #83adb5;*/
 body {
   margin: 0;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 1rem;
+  /*font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;*/
+
+
+  font-family: /*'Raleway', sans-serif*/'Poppins', sans-serif;
+  font-size: 1.5rem;
   font-weight: normal;
-  line-height: 1.5;
-  color: #292b2c;
-  background-color: #fff;
-  padding: 15px;
+  line-height: 2;
+  color: /*black */#413771;
+  background-color: #83adb5;
+  padding: 12px;
 }
 
+#content a, #content a:link, #content a:visited {
+  /*Normal links*/
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  background: #615C7A;
+  border-radius: 10px;
+}
+
+#content a:hover, #content a:active, #content a:focus 
+  /*Hovered / active links*/
+  a:hover {
+    color: black ;
+    background-color: white ;
+  }
+
+
+
 #header {
-  height: 90px;
+  height: 150px;
 }
 
 #header #title {
   text-align: center;
+
 }
 
 #header #title a {
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 
 #content {
   width: 800px;
-  margin-left: auto;
   margin-right: auto;
- /* border: 1px solid #ddd;*/
+  margin-right: auto;
+  border: 1px solid #ddd;
   padding: 10px 25px 10px 25px;
-  border-radius: 5px;
+  border-radius: 10ßpx;
 }
 
 #content h1 {
@@ -37,8 +61,8 @@ body {
 }
 
 .table {
-  width: 100%;
-  max-width: 100%;
+  width: 80%;
+  max-width: 80%;
   margin-bottom: 1rem;
   background-color: transparent;
 }
@@ -48,6 +72,7 @@ body {
   padding: 0.75rem;
   vertical-align: top;
   text-align: center;
+  border-radius: 22px;
 }
 
 .table thead th {
@@ -55,7 +80,7 @@ body {
 }
 
 .table tbody + tbody {
-  border-top: 6px solid #c7bbc9;
+  border-top: 10px solid #c7bbc9;
 }
 
 .table .table {
@@ -63,16 +88,18 @@ body {
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(58, 130, 84, 0.32);
+  background-color: white;
 }
 
 a.button {
   padding: 15px;
   border: 1px solid #ccc;
-  background-color: #0E2F59;
-  color: white;
+  background-color: #fff;
+  color: #1f758cß#413771;
   border-radius: 5px;
   margin-bottom: 5px;
   margin-top: 5px;
   text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -7,17 +7,16 @@ class Transactions
 
   def initialize( options )
     @id = nil || options['id'].to_i
-    @shop = options['shop']
+    @shop = options['shop'].capitalize
     @value = options['value']
     @tag_id = options['tag_id']
   end
-
 
   def save()
     sql = "INSERT INTO transactions (
       shop, value, tag_id
     ) VALUES (
-      '#{ @shop }','#{ @value }','#{ @tag_id }'
+      '#{ @shop }', #{ @value }, #{ @tag_id }
     ) RETURNING *"
     results = SqlRunner.run(sql)
     @id = results.first()['id'].to_i

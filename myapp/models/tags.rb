@@ -7,7 +7,7 @@ class Tags
 
   def initialize( options )
     @id = nil || options['id'].to_i
-    @name = options['name']
+    @name = options['name'].capitalize
   end
 
 
