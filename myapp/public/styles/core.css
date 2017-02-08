@@ -9,7 +9,7 @@ body {
   font-size: 1.5rem;
   font-weight: normal;
   line-height: 2;
-  color: /*black */#413771;
+  color: #413771;
   background-color: #83adb5;
   padding: 12px;
 }
@@ -18,9 +18,11 @@ body {
   /*Normal links*/
   text-decoration: none;
   color: white;
-  padding: 10px;
+  padding: 10px; 
+  margin: 20px;
   background: #615C7A;
   border-radius: 10px;
+  float:left;
 }
 
 #content a:hover, #content a:active, #content a:focus 
@@ -50,9 +52,9 @@ body {
   width: 800px;
   margin-right: auto;
   margin-right: auto;
-  border: 1px solid #ddd;
+  /*border: 3px solid #ddd;*/
   padding: 10px 25px 10px 25px;
-  border-radius: 10ßpx;
+  b/*order-radius: 10px;*/
 }
 
 #content h1 {
@@ -93,7 +95,7 @@ body {
 
 a.button {
   padding: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid /*#ccc*/white;
   background-color: #fff;
   color: #1f758cß#413771;
   border-radius: 5px;
@@ -102,4 +104,7 @@ a.button {
   text-decoration: none;
   margin-left: auto;
   margin-right: auto;
+  display: inline;
+
+
 }

@@ -1,8 +1,15 @@
 <%= erb :'_shared/header' %>
 
 <!-- <h1>Track Your Spending</h1> -->
+<div class="content">
 
 <p><a href="/tags">View Categories</a> </p>
+
+<p><a href="/transactions/delete"> Clear Transactions  </a> </p>
+
+<p><a href="/transactions/create"> New Transaction  </a> </p>
+</div>
+
 <table class="table table-striped">
   <thead>
     <tr>
@@ -30,7 +37,5 @@
 
 
 
-<p><a href="/transactions/delete"> Clear Transactions  </a> </p>
 
-<p><a href="/transactions/create"> New Transaction  </a> </p>
 <%= erb :'_shared/footer' %>
